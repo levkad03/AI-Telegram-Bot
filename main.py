@@ -45,7 +45,7 @@ async def command_help_handler(message: Message) -> None:
 
 @router.message(Command("classify"))
 async def command_classify_handler(message: Message) -> None:
-    await message.answer("Send me an image!")
+    await message.answer("Send me an image of an animal!")
 
 
 @router.message(F.photo)
