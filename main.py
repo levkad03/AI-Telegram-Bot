@@ -65,7 +65,7 @@ async def classify_photo(message: Message) -> None:
     print(predictions)
     predicted_class = np.argmax(predictions)
     predicted_class_name = class_names[predicted_class]
-    await message.answer(f"The animal on the picture is - {predicted_class_name}!")
+    await message.answer(f"The animal on the picture is - {hbold(predicted_class_name)}!")
 
 
 async def main() -> None:
